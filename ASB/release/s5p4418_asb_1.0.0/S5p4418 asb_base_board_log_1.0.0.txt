@@ -1,0 +1,79 @@
+self test ...
+
+At-Speed Board Firmware Version 0.61
+Compile at Dec 12 2014 04:13:42(24)
+RO_BASE = 0x40008000
+HEADER_SIZE = 4096
+BINARY_LODING =0x 40007000
+Boot from OneNAND
+OK
+
+Master mode
+ 
+
+********  4418  *********** 
+
+Compile at Dec 12 2014 04:13:42(24)
+1) IF Version: 1000 
+1-1) DOUBLECHIP_DISABLE 
+2) Fusing: Disable 
+3) SOT Time out: 60 sec
+4-1) ENABLE_PRINT_MASTER: Enable
+4-2) ENABLE_PRINT_SLAVE: Enable
+4-3) ENABLE_PRINT2: Enable
+4-4) ENABLE_PRINT_ERROR: Enable
+gModeSW:0x80
+**************************
+SlaveCheck:slave 0 testing...OK
+SlaveCheck:slave 1 testing...OK
+SlaveCheck:slave 2 testing...OK
+SlaveCheck:slave 3 testing...OK
+SlaveCheck:slave 4 testing...OK
+SlaveCheck:slave 5 testing...OK
+SlaveCheck:slave 6 testing...OK
+SlaveCheck:slave 7 testing...OK
+SlaveCheck:slave 8 testing...OK
+SlaveCheck:slave 9 testing...OK
+SlaveCheck:slave 10 testing...OK
+SlaveCheck:slave 11 testing...OK
+SlaveCheck:slave 12 testing...OK
+SlaveCheck:slave 13 testing...OK
+SlaveCheck:slave 14 testing...OK
+SlaveCheck:slave 15 testing...OK
+::: Manual Mode :::
+
+Press the Start button for test .. (Normal Mode)
+Detected pressing button !!
+loop count : 1
+spi err count : 0
+ENABLE ack
+..SOT ack
+..............................................................................................
+..............................................................................................
+....................................................
+ EOT !!
+..treat_bindata_message=nbin[0]=1 bin[1]=1 bin[2]=1 bin[3]=1 bin[4]=1 bin[5]=1 bin[6]=1 bin[7]
+=1 bin[8]=1 bin[9]=1 bin[10]=1 bin[11]=1 bin[12]=4 bin[13]=4 bin[14]=1 bin[15]=4 
+BINDATA ack
+bin[0]=1(ack) bin[1]=1(ack) bin[2]=1(ack) bin[3]=1(ack) bin[4]=1(ack) bin[5]=1(ack) bin[6]=1(a
+ck) bin[7]=1(ack) bin[8]=1(ack) bin[9]=1(ack) bin[10]=1(ack) bin[11]=1(ack) bin[12]=4(ack) bin
+[13]=4(ack) bin[14]=1(ack) bin[15]=4(ack) 
+BINACK ack
+1|NZBN6-W06-185-177|1|50|PASS|0|0|0|0|0|0|0|92|8|0|0|,
+2|NZBN6-W06-210-181|1|50|PASS|0|0|0|0|0|0|0|91|6|0|0|,
+3|NZBN6-W06-218-178|1|48|PASS|0|0|0|0|0|0|0|89|6|0|0|,
+4|NZBN6-W06-182-187|1|47|PASS|0|0|0|0|0|0|0|109|6|0|0|,
+5|NZBN6-W06-216-187|1|50|PASS|0|0|0|0|0|0|0|94|7|0|0|,
+6|NZBN6-W06-194-177|1|50|PASS|0|0|0|0|0|0|0|89|6|0|0|,
+7|NZBN6-W06-184-180|1|50|PASS|0|0|0|0|0|0|0|93|7|0|0|,
+8|NZBN6-W06-186-178|1|51|PASS|0|0|0|0|0|0|0|96|7|0|0|,
+9|NZBN6-W06-195-188|1|47|PASS|0|0|0|0|0|0|0|87|6|0|0|,
+10|NZBN6-W06-179-177|1|50|PASS|0|0|0|0|0|0|0|97|7|0|0|,
+11|NZBN6-W06-201-180|1|48|PASS|0|0|0|0|0|0|0|77|6|0|0|,
+12|NZBN6-W06-187-183|1|51|PASS|0|0|0|0|0|0|0|96|7|0|0|,
+13|N0000-W00-000-000|4|0|BOOT_FAIL|0|0|0|0|0|0|0|0|0|0|0|,
+14|N0000-W00-000-000|4|0|BOOT_FAIL|0|0|0|0|0|0|0|0|0|0|0|,
+15|NZBN6-W06-193-182|1|50|PASS|0|0|0|0|0|0|0|95|7|0|0|,
+16|N0000-W00-000-000|4|0|BOOT_FAIL|0|0|0|0|0|0|0|0|0|0|0|,
+LOGDATA ack
+

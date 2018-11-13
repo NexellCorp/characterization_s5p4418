@@ -1,0 +1,980 @@
+--------------------------------------------------------------------------------
+ Second Boot by Nexell Co. : Ver0.5 - Built on Dec 21 2014 14:11:19
+--------------------------------------------------------------------------------
+EMA VALUE : 001
+123RD DQ : Org value = 0x0F0D0D0A
+RD DQ : Nomal max value setting.
+WRvmx = 0x2F2F2F2F
+WRvmx = 0x2F2F2F2F
+WRvmx = 0x2F2F2F2F
+WRvmx = 0x2F2F2F2F
+WRvmx = 0x2F2F2F2F
+WRvmx = 0x2F2F2F2F
+WRvmx = 0x2F2F2F2F
+WRvmx = 0x2F2F2F2F
+WRvmx = 0x2F2F2F2F
+WRvmx = 0x2F2F2F2F
+WR DQ : Org value = 0x05050505
+Sorted Value[0] = 5
+Sorted Value[1] = 5
+Sorted Value[2] = 5
+Sorted Value[3] = 5
+WR DQ : Nomal max value setting.
+Read  DQ = 0x0D0D0D0D
+Write DQ = 0x05050505
+Loading from sd FATFS...
+mount to disk 0
+fs type 3
+NXDATA.TBH file size: 7289
+ProcessNSIH : 186 line, 512 bytes generated.
+open NXDATA.TBL
+202960 bytes load done
+ Image Loading Done!
+Launch to 0x40100000
+
+
+U-Boot 2014.07 (Dec 18 2014 - 09:37:22)
+
+PLL : [0] =  400000000, [1] =  800000000, [2] =  614399000, [3] =  800000000
+PLL1: CPU FCLK =  800000000, HCLK = 200000000
+PLL3: BUS BCLK =  400000000, PCLK = 200000000
+PLL3: MEM MCLK =  800000000, DCLK = 800000000, BCLK = 400000000, PCLK = 200000000
+PLL0: G3D BCLK =  400000000
+PLL3: MPG BCLK =  400000000, PCLK = 200000000
+I2C:   ready
+DRAM:  1 GiB
+Heap = 0x43000000~0x45000000
+Code = 0x42c00000~0x42c68510
+GLD  = 0x42bffeb8
+GLBD = 0x42bffe68
+SP   = 0x42bffe68,0x42bffe50(CURR)
+PC   = 0x42c02944
+TAGS = 0x40000100 
+PAGE = 0x42c70000~0x42c7c000
+MACH = [4330]   
+VER  = 1      
+BOARD= [asb]    
+MMC:   NXP DWMMC: 0, NXP DWMMC: 1, NXP DWMMC: 2
+In:    serial
+Out:   serial
+Err:   serial
+switch to partitions #0, OK
+mmc0 is current device
+Hit any key to stop autoboot:  0 
+reading uImage
+4343064 bytes read in 199 ms (20.8 MiB/s)
+reading root.img.gz
+6534919 bytes read in 291 ms (21.4 MiB/s)
+## Booting kernel from Legacy Image at 48000000 ...
+   Image Name:   Linux-3.4.39+
+   Image Type:   ARM Linux Kernel Image (uncompressed)
+   Data Size:    4343000 Bytes = 4.1 MiB
+   Load Address: 40008000
+   Entry Point:  40008000
+   Verifying Checksum ... OK
+   Loading Kernel Image ... OK
+
+Starting kernel ...
+
+[    0.000000] Booting Linux on physical CPU 0
+[    0.000000] Initializing cgroup subsys cpu
+[    0.000000] Linux version 3.4.39+ (nexell@nexell-ZD360-GD70K) (gcc version 4.6.x-google 20120106 (prerelease) (GCC)
+ ) #48 SMP PREEMPT Sun Dec 21 23:17:26 KST 2014
+[    0.000000] CPU: ARMv7 Processor [413fc090] revision 0 (ARMv7), cr=10c5387d
+[    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+[    0.000000] Machine: s5p4418
+[    0.000000] nxp_reserve_mem: reserve CMA: size 201326592
+[    0.000000] NXP/CMA: Reserved 0x74000000/0x0c000000 for 'ion'
+[    0.000000] NXP/CMA: success register cma region for 'ion'
+[    0.000000] rquest persistent memory from 73ffc000 (00000000)-00004000
+[    0.000000] Initialized persistent memory from 73ffc000-73ffffff
+[    0.000000] Memory policy: ECC disabled, Data cache writealloc
+[    0.000000] CPU : iomap[ 0]: p 0xc0000000 -> v 0xf0000000 len=0x300000
+[    0.000000] CPU : iomap[ 1]: p 0xf0000000 -> v 0xf0300000 len=0x100000
+[    0.000000] CPU : iomap[ 2]: p 0xcf000000 -> v 0xf0400000 len=0x100000
+[    0.000000] CPU : iomap[ 3]: p 0x2c000000 -> v 0xf0500000 len=0x100000
+[    0.000000] CPU : iomap[ 4]: p 0x00000000 -> v 0xf0600000 len=0x100000
+[    0.000000] CPU : DMA Zone Size =16M, CORE 4
+[    0.000000] CPU : VERSION = 2 (0xE153000A)
+[    0.000000] s5p4418-asb : done board initialize ...
+[    0.000000] CPU : Clock Generator= 64 EA, DVFS = support, PLL.1
+[    0.000000] PLL : [0] =  400000000, [1] =  800000000, [2] =  614399000, [3] =  800000000
+[    0.000000] PLL1: CPU FCLK =  800000000, HCLK = 200000000
+[    0.000000] PLL3: BUS BCLK =  400000000, PCLK = 200000000
+[    0.000000] PLL3: MEM MCLK =  800000000, DCLK = 800000000, BCLK = 400000000, PCLK = 200000000
+[    0.000000] PLL0: G3D BCLK =  400000000
+[    0.000000] PLL3: MPG BCLK =  400000000, PCLK = 200000000
+[    0.000000] PERCPU: Embedded 8 pages/cpu @81343000 s11584 r8192 d12992 u32768
+[    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 259840
+[    0.000000] Kernel command line: console=ttyAMA0,115200n8 root=/dev/ram0 rw initrd=0x49000000,16M ramdisk=16384 
+[    0.000000] PID hash table entries: 4096 (order: 2, 16384 bytes)
+[    0.000000] Dentry cache hash table entries: 131072 (order: 7, 524288 bytes)
+[    0.000000] Inode-cache hash table entries: 65536 (order: 6, 262144 bytes)
+[    0.000000] allocated 2097152 bytes of page_cgroup
+[    0.000000] please try 'cgroup_disable=memory' option if you don't want memory cgroups
+[    0.000000] Memory: 1024MB = 1024MB total
+[    0.000000] Memory: 812860k/812860k available, 235716k reserved, 0K highmem
+[    0.000000] Virtual kernel memory layout:
+[    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+[    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+[    0.000000]     vmalloc : 0xc0800000 - 0xfee00000   ( 998 MB)
+[    0.000000]     lowmem  : 0x80000000 - 0xc0000000   (1024 MB)
+[    0.000000]     pkmap   : 0x7fe00000 - 0x80000000   (   2 MB)
+[    0.000000]     modules : 0x7f000000 - 0x7fe00000   (  14 MB)
+[    0.000000]       .text : 0x80008000 - 0x807c95dc   (7942 kB)
+[    0.000000]       .init : 0x807ca000 - 0x807ffd40   ( 216 kB)
+[    0.000000]       .data : 0x80800000 - 0x808703f8   ( 449 kB)
+[    0.000000]        .bss : 0x8087041c - 0x80a3b8c8   (1838 kB)
+[    0.000000] SLUB: Genslabs=11, HWalign=64, Order=0-3, MinObjects=0, CPUs=4, Nodes=1
+[    0.000000] Preemptible hierarchical RCU implementation.
+[    0.000000] NR_IRQS:360
+[    0.000000] VIC @f0002000: id 0x00041192, vendor 0x41
+[    0.000000] VIC @f0003000: id 0x00041192, vendor 0x41
+[    0.000000] GPIO  @f001a000: start  64, mask 0xffffffff (gpio 53)
+[    0.000000] GPIO  @f001b000: start  96, mask 0xffffffff (gpio 54)
+[    0.000000] GPIO  @f001c000: start 128, mask 0xffffffff (gpio 55)
+[    0.000000] GPIO  @f001d000: start 160, mask 0xffffffff (gpio 56)
+[    0.000000] GPIO  @f001e000: start 192, mask 0xffffffff (gpio 57)
+[    0.000000] ALIVE @f0010800: start 224, mask 0x000000ff (alive 4)
+[    0.000000] GIC   @f0301000: start 256 (vic 31)
+[    0.000000] timer.0: source,  10000000(HZ:1000), mult:3355443200
+[    0.000000] timer.1: event ,  10000000(HZ:1000), mult:42949673
+[    0.000000] sched_clock: 32 bits at 1kHz, resolution 1000000ns, wraps every 4294967295ms
+[    0.000000] Calibrating delay loop... 1581.05 BogoMIPS (lpj=790528)
+[    0.015000] pid_max: default: 32768 minimum: 301
+[    0.015000] Security Framework initialized
+[    0.015000] SELinux:  Initializing.
+[    0.015000] Mount-cache hash table entries: 512
+[    0.016000] Initializing cgroup subsys debug
+[    0.016000] Initializing cgroup subsys cpuacct
+[    0.016000] Initializing cgroup subsys memory
+[    0.016000] Initializing cgroup subsys freezer
+[    0.016000] CPU: Testing write buffer coherency: ok
+[    0.017000] CPU0: thread -1, cpu 0, socket 10, mpidr 80000a00
+[    0.017000] Setting up static identity map for 0x405af038 - 0x405af090
+[    0.017000] L310 cache controller enabled
+[    0.017000] l2x0: 16 ways, CACHE_ID 0x4100c4c8, AUX_CTRL 0x70070001, Cache size: 1048576 B
+[    0.033000] CPU1: thread -1, cpu 1, socket 10, mpidr 80000a01
+[    0.045000] CPU2: thread -1, cpu 2, socket 10, mpidr 80000a02
+[    0.057000] CPU3: thread -1, cpu 3, socket 10, mpidr 80000a03
+[    0.057000] Brought up 4 CPUs
+[    0.057000] SMP: Total of 4 processors activated (6354.94 BogoMIPS).
+[    0.057000] devtmpfs: initialized
+[    0.064000] pwm: max = 50000000 hz
+[    0.065000] dummy: 
+[    0.065000] NET: Registered protocol family 16
+[    0.066000] persistent_ram: uncorrectable error in header
+[    0.066000] persistent_ram: no valid data in buffer (sig = 0xffffffff)
+[    0.067000] console [ram-1] enabled
+[    0.067000] [Register machine platform devices]
+[    0.068000] mach: add amba device uart-pl011.0 
+[    0.068000] mach: add amba device uart-pl011.1 
+[    0.068000] mach: add amba device uart-pl011.2 
+[    0.068000] mach: add amba device uart-pl011.3 
+[    0.068000] mach: add amba device uart-pl011.4 
+[    0.068000] mach: add amba device pl08xdmac.0 
+[    0.069000] mach: add amba device pl08xdmac.1 
+[    0.069000] mach: add amba device ssp-pl022.2 
+[    0.073000] mach: add device syncgen [2]
+[    0.073000] mach: add device lvds 
+[    0.073000] mach: add device i2c bus (array:3) 
+[    0.074000] mach: add device Real Time Clock  
+[    0.074000] mach: add device generic pwm (array:3)
+[    0.074000] mach: add device generic gpio (array:6)
+[    0.074000] mach: add device i2s (array:3) 
+[    0.075000] mach: add device spdif tx
+[    0.075000] mach: add device spdif rx
+[    0.075000] mach: add device usb_ehci
+[    0.075000] mach: add device usb otg
+[    0.075000] mach: add device ion-nxp
+[    0.075000] mach: add device adc
+[    0.075000] mach: add graphic device opengl|es
+[    0.076000] mach: add device watchdog
+[    0.076000] [Register board platform devices]
+[    0.076000] plat: add dynamic frequency (pll.1)
+[    0.076000] plat: add framebuffer
+[    0.076000] plat: add device sdmmc [0]
+[    0.077000] plat: add device sdmmc [1]
+[    0.079000] plat: add device sdmmc [2]
+[    0.080000] plat: add device nxe2000 pmic
+[    0.080000] plat: add device misc mpegts
+[    0.080000] plat: add device spdif playback
+[    0.080000] plat: add device spdif capture
+[    0.081000] plat: add device nxp-v4l2
+[    0.081000] plat: register spidev
+[    0.081000] plat: add device nxp-gmac
+[    0.081000] plat: add device ppm
+[    0.081000] 
+[    0.082000] Serial: AMBA PL011 UART driver
+[    0.082000] uart-pl011.0: ttyAMA0 at MMIO 0xc00a1000 (irq = 7) is a PL011 rev3
+[    0.083000] console [ttyAMA0] enabled
+[    0.084000] uart-pl011.1: ttyAMA1 at MMIO 0xc00a0000 (irq = 6) is a PL011 rev3
+[    0.085000] uart-pl011.2: ttyAMA2 at MMIO 0xc00a2000 (irq = 8) is a PL011 rev3
+[    0.086000] uart-pl011.3: ttyAMA3 at MMIO 0xc00a3000 (irq = 9) is a PL011 rev3
+[    0.087000] uart-pl011.4: ttyAMA4 at MMIO 0xc006d000 (irq = 10) is a PL011 rev3
+[    0.107000] bio: create slab <bio-0> at 0
+[    0.108000] gpiochip_add: registered GPIOs 0 to 31 on device: nxp-gpio.0
+[    0.109000] gpiochip_add: registered GPIOs 32 to 63 on device: nxp-gpio.1
+[    0.110000] gpiochip_add: registered GPIOs 64 to 95 on device: nxp-gpio.2
+[    0.111000] gpiochip_add: registered GPIOs 96 to 127 on device: nxp-gpio.3
+[    0.112000] gpiochip_add: registered GPIOs 128 to 159 on device: nxp-gpio.4
+[    0.113000] gpiochip_add: registered GPIOs 160 to 167 on device: nxp-gpio.5
+[    0.114000] pl08xdmac pl08xdmac.0: Unbalanced pm_runtime_enable!
+[    0.115000] pl08xdmac pl08xdmac.0: initialized 8 virtual memcpy channels
+[    0.116000] pl08xdmac pl08xdmac.0: initialized 16 virtual slave channels
+[    0.119000] pl08xdmac pl08xdmac.0: DMA: PL080 rev1 at 0xc0000000 irq 1
+[    0.120000] pl08xdmac pl08xdmac.1: Unbalanced pm_runtime_enable!
+[    0.121000] pl08xdmac pl08xdmac.1: initialized 8 virtual memcpy channels
+[    0.122000] pl08xdmac pl08xdmac.1: initialized 15 virtual slave channels
+[    0.124000] pl08xdmac pl08xdmac.1: DMA: PL080 rev1 at 0xc0001000 irq 2
+[    0.125000] nxp_ion_probe success!!!
+[    0.126000] i2c-core: driver [nxe2000] using legacy suspend method
+[    0.127000] i2c-core: driver [nxe2000] using legacy resume method
+[    0.128000] SCSI subsystem initialized
+[    0.129000] ssp-pl022 ssp-pl022.2: ARM PL022 driver, device ID: 0x00041022
+[    0.130000] pl022: mapped registers from 0xc005f000 to f005f000
+[    0.131000] ssp-pl022 ssp-pl022.2: setup for DMA on RX dma1chan11, TX dma1chan10
+[    0.133000] spi spi2.0: chip select function is NULL for this chip
+[    0.134000] usbcore: registered new interface driver usbfs
+[    0.135000] usbcore: registered new interface driver hub
+[    0.136000] usbcore: registered new device driver usb
+[    0.139000] nxp-i2c.0:    97656 hz [pclk=200000000, clk = 256, scale= 7, timeout= 500 ms]
+[    0.153000] NXE2000_DC1: 950 <--> 2000 mV at 1125 mV normal standby
+[    0.163000] NXE2000_DC2: 1000 <--> 2000 mV at 1100 mV normal standby
+[    0.173000] NXE2000_DC3: 1000 <--> 3487 mV at 3300 mV normal standby
+[    0.182000] NXE2000_DC4: 1000 <--> 2000 mV at 1500 mV normal standby
+[    0.192000] NXE2000_DC5: 1000 <--> 2000 mV at 1500 mV normal standby
+[    0.202000] NXE2000_LDO1: 1000 <--> 3475 mV at 3300 mV normal standby
+[    0.212000] NXE2000_LDO2: 1000 <--> 3475 mV at 1800 mV normal standby
+[    0.222000] NXE2000_LDO3: 1000 <--> 3475 mV at 1800 mV normal standby
+[    0.231000] NXE2000_LDO4: 1000 <--> 3475 mV at 1800 mV normal standby
+[    0.240000] NXE2000_LDO5: 1000 <--> 3475 mV at 2800 mV normal standby
+[    0.250000] NXE2000_LDO6: 1000 <--> 3475 mV at 3300 mV normal standby
+[    0.260000] NXE2000_LDO7: 1000 <--> 3475 mV at 2800 mV normal standby
+[    0.269000] NXE2000_LDO8: 1000 <--> 3475 mV at 3300 mV normal standby
+[    0.279000] NXE2000_LDO9: 1000 <--> 3475 mV at 3300 mV normal standby
+[    0.289000] NXE2000_LDO10: 1000 <--> 3475 mV at 1200 mV normal standby
+[    0.299000] NXE2000_LDORTC1: 1700 <--> 3475 mV at 1800 mV normal standby
+[    0.310000] NXE2000_LDORTC2: 1000 <--> 3475 mV at 1000 mV normal standby
+[    0.316000] gpiochip_add: gpios 192..196 (nxe2000) failed to register
+[    0.323000] nxe2000 0-0032: GPIO registration failed: -22
+[    0.330000] nxp-i2c.1:    97656 hz [pclk=200000000, clk = 256, scale= 7, timeout= 500 ms]
+[    0.339000] nxp-i2c.2:    97656 hz [pclk=200000000, clk = 256, scale= 7, timeout= 500 ms]
+[    0.348000] Linux media interface: v0.10
+[    0.352000] Linux video capture interface: v2.00
+[    0.356000] pps_core: LinuxPPS API ver. 1 registered
+[    0.362000] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+[    0.371000] PTP clock support registered
+[    0.375000] Advanced Linux Sound Architecture Driver Version 1.0.25.
+[    0.382000] cfg80211: Calling CRDA to update world regulatory domain
+[    0.382000] Switching to clocksource source timer
+[    0.408000] NET: Registered protocol family 2
+[    0.413000] IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
+[    0.421000] TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+[    0.430000] TCP bind hash table entries: 65536 (order: 7, 786432 bytes)
+[    0.439000] TCP: Hash tables configured (established 131072 bind 65536)
+[    0.445000] TCP: reno registered
+[    0.449000] UDP hash table entries: 512 (order: 2, 16384 bytes)
+[    0.455000] UDP-Lite hash table entries: 512 (order: 2, 16384 bytes)
+[    0.462000] NET: Registered protocol family 1
+[    0.466000] RPC: Registered named UNIX socket transport module.
+[    0.473000] RPC: Registered udp transport module.
+[    0.477000] RPC: Registered tcp transport module.
+[    0.482000] RPC: Registered tcp NFSv4.1 backchannel transport module.
+[    0.489000] Trying to unpack rootfs image as initramfs...
+[    0.495000] rootfs image is not initramfs (no cpio magic); looks like an initrd
+[    0.600000] Freeing initrd memory: 16384K
+[    0.604000] Disply Reset Status : Off
+[    0.610000] Disply Reset Top/Syncgen ...
+[    0.614000] Display LVDS register operation 
+[    0.619000] Display.0 fps=76 (13 ms), wait=15 jiffies, Pixelclk=66666666hz
+[    0.626000] LVDS: [4]=LVDS connect to [5]=SYNCGEN0
+[    0.631000] audit: initializing netlink socket (disabled)
+[    0.637000] type=2000 audit(0.637:1): initialized
+[    0.650000] NFS: Registering the id_resolver key type
+[    0.656000] fuse init (API version 7.18)
+[    0.660000] msgmni has been set to 1619
+[    0.666000] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 249)
+[    0.673000] io scheduler noop registered
+[    0.677000] io scheduler deadline registered
+[    0.682000] io scheduler cfq registered (default)
+[    0.687000] display.0 connected to fb.0  ...
+[    0.691000] nxp-fb.0: dma addr = 0x74000000, buf[0xb2063580]
+[    0.697000] nxp-fb.0: dma addr = 0x74258000, buf[0xb20636c0]
+[    0.703000] nxp-fb.0: dma addr = 0x744b0000, buf[0xb2063800]
+[    0.724000] nxp-fb 0: out[0], 1024 * 600 - 32 bpp (phys:74000000 virt:0xb4000000 max:7372800)
+[    0.734000] uart-pl011 uart-pl011.0: no DMA platform data
+[    0.739000] uart-pl011 uart-pl011.1: no DMA platform data
+[    0.745000] uart-pl011 uart-pl011.2: no DMA platform data
+[    0.750000] uart-pl011 uart-pl011.3: no DMA platform data
+[    0.756000] uart-pl011 uart-pl011.4: no DMA platform data
+[    0.768000] brd: module loaded
+[    0.774000] loop: module loaded
+[    0.778000] NAND ecc: Hardware (delay 10)
+[    0.783000] Scanning NAND device ...
+[    0.847000] NAND device: Manufacturer ID: 0xad, Chip ID: 0xd7 (Hynix NAND 4GiB 3,3V 8-bit)
+[    0.855000] NAND device: 4096MiB, MLC, page size: 8192, OOB size: 640
+[    0.862000] Scanning device for bad blocks
+[    1.433000] hw ecc 40 bit, oob 640, bad '0,1', ecc 80~639 (560), free 2~79 (78) 
+[    1.441000] Creating 1 MTD partitions on "nxp-nand":
+[    1.446000] 0x000000000000-0x000100000000 : "root"
+[    1.452000] DONE: Nand partition 
+[    1.456000] tun: Universal TUN/TAP device driver, 1.6
+[    1.461000] tun: (C) 1999-2004 Max Krasnyansky <maxk@qualcomm.com>
+[    1.468000] NXP mac init ..................
+[    1.472000] stmmac - user ID: 0x37, Synopsys ID: 0x37
+[    1.478000]  Ring mode enabled
+[    1.481000]  DMA HW capability register supported
+[    1.485000]  Enhanced/Alternate descriptors
+[    1.490000]  Enabled extended descriptors
+[    1.494000]  RX Checksum Offload Engine supported (type 2)
+[    1.500000]  TX Checksum insertion supported
+[    1.504000]  Wake-Up On Lan supported
+[    1.508000]  Enable RX Mitigation via HW Watchdog Timer
+[    1.547000] stmmac: probed
+[    1.550000] eth0: PHY ID 001cc915 at 0 IRQ 215 (stmmac-0:00)
+[    1.556000] eth0: PHY ID 001cc915 at 7 IRQ 215 (stmmac-0:07) active
+[    1.562000] PPP generic driver version 2.4.2
+[    1.567000] PPP BSD Compression module registered
+[    1.572000] PPP Deflate Compression module registered
+[    1.577000] PPP MPPE Compression module registered
+[    1.582000] NET: Registered protocol family 24
+[    1.587000] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+[    1.594000] ==== echi_hcd_late_work after 500 ms
+[    1.598000] dwc_otg: version 3.00a 10-AUG-2012 (platform bus)
+[    1.805000] Core Release: 2.93a
+[    1.808000] Setting default values for core params
+[    1.813000] Finished setting default values for core params
+[    1.819000] Using Buffer DMA mode
+[    1.823000] Dedicated Tx FIFOs mode
+[    1.827000] dwc_otg dwc_otg: DWC OTG Controller
+[    1.831000] dwc_otg dwc_otg: new USB bus registered, assigned bus number 1
+[    1.838000] dwc_otg dwc_otg: irq 49, io mem 0x00000000
+[    1.844000] usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+[    1.850000] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    1.858000] usb usb1: Product: DWC OTG Controller
+[    1.863000] usb usb1: Manufacturer: Linux 3.4.39+ dwc_otg_hcd
+[    1.869000] usb usb1: SerialNumber: dwc_otg
+[    1.873000] hub 1-0:1.0: USB hub found
+[    1.877000] hub 1-0:1.0: 1 port detected
+[    1.882000] Initializing USB Mass Storage driver...
+[    1.887000] usbcore: registered new interface driver usb-storage
+[    1.893000] USB Mass Storage support registered.
+[    1.898000] g_mass_storage gadget: Mass Storage Function, version: 2009/09/11
+[    1.905000] g_mass_storage gadget: Number of LUNs=1
+[    1.910000]  lun0: LUN: removable file: (no medium)
+[    1.915000] g_mass_storage gadget: Mass Storage Gadget, version: 2009/09/11
+[    1.922000] g_mass_storage gadget: userspace failed to provide iSerialNumber
+[    1.929000] g_mass_storage gadget: g_mass_storage ready
+[    1.935000] mousedev: PS/2 mouse device common for all mice
+[    1.941000] nxp-rtc nxp-rtc.0: rtc core: registered nxp-rtc as rtc0
+[    1.947000] i2c /dev entries driver
+[    1.952000] lirc_dev: IR Remote Control driver registered, major 248 
+[    1.959000] IR keymap rc-nec-terratec-cinergy-xs not found
+[    1.965000] Registered IR keymap rc-empty
+[    1.969000] input: nxp_ir_recv as /devices/virtual/rc/rc0/input0
+[    1.975000] rc0: nxp_ir_recv as /devices/virtual/rc/rc0
+[    1.981000] nxp_v4l2_probe success!!!
+[    1.992000] NX_RSTCON_GetPhysicalAddress = 0xc0012000
+[    1.998000] NX_MPEGTSI_GetPhysicalAddress = 0xc005d000
+[    2.003000] nxp_wdt: NXP Watchdog Timer, (c) 2014 SLsiAP
+[    2.011000] nxp-wdt nxp-wdt: watchdog inactive, reset disabled, irq disabled
+[    2.018000] device-mapper: uevent: version 1.0.3
+[    2.023000] device-mapper: ioctl: 4.22.0-ioctl (2011-10-19) initialised: dm-devel@redhat.com
+[    2.032000] DVFS: ASV[0] IDS(10mA,  7) Ro(110, 93)
+[    2.037000] DVFS: cpu DVFS with PLL.1 [tables=11]
+[    2.042000] cpuidle: using governor ladder
+[    2.047000] cpuidle: using governor menu
+[    2.051000] Synopsys Designware Multimedia Card Interface Driver
+[    2.057000] dw_mmc dw_mmc.0: Using internal DMA controller.
+[    2.063000] mmc0: no vmmc regulator found
+[    2.067000] dw_mmc dw_mmc.0: Using external card detect irq 225 (io 161)
+[    2.076000] dw_mmc dw_mmc.0: Version ID is 250a
+[    2.080000] dw_mmc dw_mmc.0: DW MMC controller at irq 43, 32 bit host data width, 32 deep fifo hw timeout 500 ms
+[    2.087000] mmc_host mmc0: Bus speed (slot 0) = 40000000Hz (slot req 400000Hz, actual 400000HZ div = 50)
+[    2.101000] nxp-ehci nxp-ehci: SLsi Synopsys EHCI Host Controller
+[    2.107000] nxp-ehci nxp-ehci: new USB bus registered, assigned bus number 2
+[    2.114000] nxp-ehci nxp-ehci: irq 50, io mem 0xc0030000
+[    2.126000] nxp-ehci nxp-ehci: USB 0.0 started, EHCI 1.00
+[    2.131000] usb usb2: New USB device found, idVendor=1d6b, idProduct=0002
+[    2.138000] usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+[    2.139000] mmc_host mmc0: Bus speed (slot 0) = 40000000Hz (slot req 40000000Hz, actual 40000000HZ div = 0)
+[    2.139000] mmc0: new high speed SDHC card at address 59b4
+[    2.139000] mmcblk0: mmc0:59b4 00000 7.35 GiB 
+[    2.140000]  mmcblk0: p1
+[    2.168000] usb usb2: Product: SLsi Synopsys EHCI Host Controller
+[    2.174000] usb usb2: Manufacturer: Linux 3.4.39+ ehci_hcd
+[    2.180000] usb usb2: SerialNumber: nxp-ehci
+[    2.185000] hub 2-0:1.0: USB hub found
+[    2.188000] hub 2-0:1.0: 3 ports detected
+[    2.193000] dw_mmc dw_mmc.1: Using internal DMA controller.
+[    2.199000] mmc1: no vmmc regulator found
+[    2.203000] dw_mmc dw_mmc.0: Using external card detect irq 128 (io 64)
+[    2.212000] dw_mmc dw_mmc.1: Version ID is 250a
+[    2.216000] dw_mmc dw_mmc.1: DW MMC controller at irq 44, 32 bit host data width, 32 deep fifo hw timeout 500 ms
+[    2.227000] dw_mmc dw_mmc.2: Using internal DMA controller.
+[    2.232000] mmc2: no vmmc regulator found
+[    2.237000] dw_mmc dw_mmc.0: Using external card detect irq 130 (io 66)
+[    2.245000] dw_mmc dw_mmc.2: Version ID is 250a
+[    2.249000] dw_mmc dw_mmc.2: DW MMC controller at irq 45, 32 bit host data width, 32 deep fifo hw timeout 500 ms
+[    2.260000] usbcore: registered new interface driver usbhid
+[    2.266000] usbhid: USB HID core driver
+[    2.271000] ADC: CHs 8, 200000(1000000 ~ 130208) sample rate, polling mode, scale=166(bit 6)
+[    2.280000] ashmem: initialized
+[    2.283000] logger: created 256K log 'log_main'
+[    2.288000] logger: created 256K log 'log_events'
+[    2.293000] logger: created 256K log 'log_radio'
+[    2.298000] logger: created 256K log 'log_system'
+[    2.303000] snd pcm: register sound platform 'nxp-pcm'
+[    2.309000] snd i2s: ch 0, master, left justified mode, 48000(47348)hz, 48 FBITs, MCLK=18181818hz, RFS=384
+[    2.320000] snd i2s: ch 1, slave, left justified mode, 48000(0)hz, 48 FBITs, MCLK=0hz, RFS=384
+[    2.329000] snd i2s: ch 2, slave, left justified mode, 48000(0)hz, 48 FBITs, MCLK=0hz, RFS=384
+[    2.341000] asoc: snd-null-voice <-> nxp-i2s.2 mapping ok
+[    2.349000] asoc: snd-null-voice <-> nxp-i2s.1 mapping ok
+[    2.357000] asoc: snd-null-voice <-> nxp-i2s.0 mapping ok
+[    2.363000] spdif-tx: 48000(47999)Hz, MCLK=12287980hz SPDIF out
+[    2.371000] asoc: dit-hifi <-> nxp-spdif-tx mapping ok
+[    2.378000] spdif-rx: PCLK=200000000hz 
+[    2.383000] asoc: dit-hifi-receiver <-> nxp-spdif-rx mapping ok
+[    2.390000] GACT probability NOT on
+[    2.394000] Mirror/redirect action on
+[    2.397000] u32 classifier
+[    2.400000]     Actions configured
+[    2.404000] Netfilter messages via NETLINK v0.30.
+[    2.409000] nf_conntrack version 0.5.0 (12956 buckets, 51824 max)
+[    2.415000] ctnetlink v0.93: registering with nfnetlink.
+[    2.421000] NF_TPROXY: Transparent proxy support initialized, version 4.1.0
+[    2.428000] NF_TPROXY: Copyright (c) 2006-2007 BalaBit IT Ltd.
+[    2.434000] xt_time: kernel timezone is -0000
+[    2.439000] ip_tables: (C) 2000-2006 Netfilter Core Team
+[    2.445000] arp_tables: (C) 2002 David S. Miller
+[    2.449000] TCP: cubic registered
+[    2.453000] Initializing XFRM netlink socket
+[    2.458000] NET: Registered protocol family 10
+[    2.463000] Mobile IPv6
+[    2.466000] ip6_tables: (C) 2000-2006 Netfilter Core Team
+[    2.471000] IPv6 over IPv4 tunneling driver
+[    2.477000] NET: Registered protocol family 17
+[    2.481000] NET: Registered protocol family 15
+[    2.486000] NET: Registered protocol family 35
+[    2.491000] Registering the dns_resolver key type
+[    2.495000] usb 2-2: new high-speed USB device number 2 using nxp-ehci
+[    2.502000] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 4
+[    2.510000] Registering SWP/SWPB emulation handler
+[    2.517000] NXE2000_LDO8: incomplete constraints, leaving on
+[    2.523000] nxp-rtc nxp-rtc.0: setting system clock to 2106-02-05 18:05:43 UTC (4294836343)
+[    2.532000] ALSA device list:
+[    2.535000]   #0: SND-NULL.2
+[    2.538000]   #1: SND-NULL.1
+[    2.541000]   #2: SND-NULL.0
+[    2.544000]   #3: SPDIF-Transciever
+[    2.547000]   #4: SPDIF-Receiver
+[    2.551000] RAMDISK: gzip image found at block 0
+[    2.609000] usb 2-2: New USB device found, idVendor=0424, idProduct=2640
+[    2.616000] usb 2-2: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+[    2.624000] hub 2-2:1.0: USB hub found
+[    2.628000] hub 2-2:1.0: 3 ports detected
+[    2.906000] usb 2-2.1: new high-speed USB device number 3 using nxp-ehci
+[    3.004000] usb 2-2.1: New USB device found, idVendor=0424, idProduct=4040
+[    3.011000] usb 2-2.1: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+[    3.018000] usb 2-2.1: Product: Ultra Fast Media Reader
+[    3.024000] usb 2-2.1: Manufacturer: Generic
+[    3.028000] usb 2-2.1: SerialNumber: 000000264001
+[    3.034000] scsi0 : usb-storage 2-2.1:1.0
+[    3.169000] VFS: Mounted root (ext2 filesystem) on device 1:0.
+[    3.175000] devtmpfs: mounted
+[    3.179000] Freeing init memory: 212K
+[    3.183000] Write protecting the kernel text section 80008000 - 8079b000
+[    3.190000] rodata_test: attempting to write to read-only section:
+[    3.196000] write to read-only section trapped, success
+Starting logging: OK
+Enabling hot-plug ...Initializing random number generator... done.
+S21random : link /dev/random to /dev/urandom ...
+Starting network...
+[    3.437000] setting PHY_BASEADDR_POWER_GATE, set 1
+[    3.442000] setting PHY_BASEADDR_PMU_ISOLATE+4, set 0
+[    3.447000] setting PHY_BASEADDR_PMU_ISOLATE+8, set 0
+[    3.453000] setting PHY_BASEADDR_PMU_ISOLATE, set 1
+[    3.458000] read PHY_BASEADDR_PMU_ISOLATE + 0xC
+[    3.462000] Wait Power UP Ack(powerUpAck=0x00000002)
+[    3.468000] setting ClockGen, set 1
+[    3.471000] setting Reset VR addr(0xf0012008)
+[    3.476000] setting PHY_BASEADDR_VR_PMU addr(0xf0072000)
+[    3.483000] Vr: VR device driver loaded(ver1.2) for NXP4330
+[    3.510000] [DRV|VPU_API]Build Date : Oct 15 2014, 20:43:08
+root@NEXELL:/# VOL :+0mV
+ 800000khz ARM  1125000 (+0) align 12500[    3.547000] spidev spi2.0: chip select function is NULL for this chip
+ (O) -> 1125000
+ 800000[    3.556000] spidev spi2.0: chip select function is NULL for this chip
+khz CORE 1100000 (+0) align 12500 (O) -> 1100000
+Type     : 0xC
+OP Code  : 0xA0
+CRC      : 0x857E
+Reserved : 0x00000000
+data     : 01000000 00000000 00000000 00000000 00000000 00000000 00000000 00000000
+  Chip Info : NZBN6     6       184     180     7       93, vid=0x04e8, pid=0x1234
+
+
+================================================
+    Start ASB Test(38 items)
+================================================
+========= CPU Core Test    start
+smp cpus:4 (request 4)
+========= CPU Core Test    test result OK
+[    4.041000] scsi 0:0:0:0: Direct-Access     Generic  Ultra HS-COMBO   2.01 PQ: 0 ANSI: 0
+========= ADC Test         start[    4.055000] sd 0:0:0:0: Attached scsi generic sg0 type 0
+
+[TRY #1] ....
+[    4.064000] sd 0:0:0:0: [sda] Attached SCSI removable disk
+        result =========>  pass
+========= ADC Test         test result OK
+========= GMAC Test        start
+[    7.330000] eth0: device MAC address 6a:2d:b0:e1:33:05
+[    7.549000] stmmac_open: failed PTP initialisation
+[TRY #1] ....
+6a:2d:b0:e1:33:Loopback Test OK!!!
+========= GMAC Test        test result OK
+========= I2C CH 0 Test    start
+[READ],[Nomal] I2C-0, ADDR=0x64, REG=0x00 DATA=0x02
+========= I2C CH 0 Test    test result OK
+========= I2C CH 1 Test    start
+[READ],[Nomal] I2C-1, ADDR=0xffffff8a, REG=0x00 DATA=0x36
+========= I2C CH 1 Test    test result OK
+========= I2C CH 2 Test    start
+[READ],[Nomal] I2C-2, ADDR=0x64, REG=0x00 DATA=0x01
+========= I2C CH 2 Test    test result OK
+========= I2S CH 0 <-> 1   start
+Playing WAVE '/mnt/mmc0/audio/0xaa55_48000_16bit.wav' : Signed 16 bit Little Endian, Rate 48000 Hz, Stereo
+Recording WAVE '/tmp/i2s_test.wav' : Signed 16 bit Little Endian, Rate 48000 Hz, Stereo
+pass!
+========= I2S CH 0 <-> 1   test result OK
+========= I2S CH 0 <-> 2   start
+Playing WAVE '/mnt/mmc0/audio/0xaa55_48000_16bit.wav' : Signed 16 bit Little Endian, Rate 48000 Hz, Stereo
+Recording WAVE '/tmp/i2s_test.wav' : Signed 16 bit Little Endian, Rate 48000 Hz, Stereo
+pass!
+========= I2S CH 0 <-> 2   test result OK
+========= AC97 Test        start
+
+(W) 0xc0058008: 0x0000ffff
+pass!! 0x0000ffff
+========= AC97 Test        test result OK
+========= SPDIF TX <-> RX  start
+Recording WAVE '/tmp/spdif_test.wav' : Signed 16 bit Little Endian, Rate 48000 Hz, StereoPlaying WAVE '/mnt/mmc0/audio
+/0xaa55_48000_16bit.wav' : 
+Signed 16 bit Little Endian, Rate 48000 Hz, Stereo
+pass!
+========= SPDIF TX <-> RX  test result OK
+========= MMC Test         start
+[   18.010000] mmc_host mmc1: Bus speed (slot 0) = 40000000Hz (slot req 400000Hz, actual 400000HZ div = 50)
+[   18.350000] mmc_host mmc1: Bus speed (slot 0) = 40000000Hz (slot req 40000000Hz, actual 40000000HZ div = 0)
+[   18.360000] mmc1: new high speed MMC card at address 0001
+[   18.367000] mmcblk1: mmc1:0001 BWBC3R 29.1 GiB 
+[   18.371000] mmcblk1boot0: mmc1:0001 BWBC3R partition 1 4.00 MiB
+[   18.378000] mmcblk1boot1: mmc1:0001 BWBC3R partition 2 4.00 MiB
+[   18.385000]  mmcblk1: unknown partition table
+[   18.393000]  mmcblk1boot1: unknown partition table
+[   18.400000]  mmcblk1boot0: unable to read partition table
+[   18.597000] mmc1: card 0001 removed
+[   18.820000] mmc_host mmc2: Bus speed (slot 0) = 40000000Hz (slot req 400000Hz, actual 400000HZ div = 50)
+[   18.885000] mmc_host mmc2: Bus speed (slot 0) = 40000000Hz (slot req 40000000Hz, actual 40000000HZ div = 0)
+[   18.895000] mmc2: new high speed MMC card at address 0001
+[   18.901000] mmcblk1: mmc2:0001 BWBC3R 29.1 GiB 
+[   18.906000] mmcblk1boot0: mmc2:0001 BWBC3R partition 1 4.00 MiB
+[   18.913000] mmcblk1boot1: mmc2:0001 BWBC3R partition 2 4.00 MiB
+[   18.920000]  mmcblk1: unknown partition table
+[   18.927000]  mmcblk1boot1: unknown partition table
+MMC TEST result ok
+[   18.935000]  mmcblk1boot0: unknown partition table
+========= MMC Test         test result OK
+========= NAND Test        start
+[TRY #1] ....
+TYPE: mlc-nand
+========= NAND Test        test result OK
+[   19.135000] mmc2: card 0001 removed
+========= PWM/PPM Test     start
+set duty : 50 : get duty 50
+========= PWM/PPM Test     test result OK
+========= PWM CH 3 Test    start
+
+(W) 0xc0018030: 0x0000ffff
+pass!! 0x0000ffff
+========= PWM CH 3 Test    test result OK
+========= PDM Test         start
+
+(W) 0xc0014014: 0x0000ffff
+pass!! 0x0000ffff
+========= PDM Test         test result OK
+========= SPI CH 1 Test    start
+
+(W) 0xc005c010: 0x000000fe
+pass!! 0x000000fe
+========= SPI CH 1 Test    test result OK
+========= UART CH 1 <-> 2  start
+[Serial DBG]: test_transfer
+[Serial DBG]: tbuf=0x0x12090 
+[Serial DBG]: rbuf=0x0x12298 
+[Serial DBG]: write end
+[Serial DBG]: test end 
+[Serial DBG]: buf=0x0x12090:0x0x12298 
+[Serial DBG]: buf=0x0x12090x0x0x12298 
+[Serial MSG] :  Test ret = 0
+[Serial DBG]: ret = 0 
+[Serial DBG]: test_transfer
+[Serial DBG]: tbuf=0x0x12090 
+[Serial DBG]: rbuf=0x0x12298 
+[Serial DBG]: write end
+[Serial DBG]: test end 
+[Serial DBG]: buf=0x0x12090:0x0x12298 
+[Serial DBG]: buf=0x0x12090x0x0x12298 
+[Serial MSG] :  Test ret = 0
+[Serial DBG]: ret = 0 
+[EXIT '/dev/ttyAMA1']
+===> ret = 0
+========= UART CH 1 <-> 2  test result OK
+========= UART CH 3 <-> 4  start
+[Serial DBG]: test_transfer
+[Serial DBG]: tbuf=0x0x12090 
+[Serial DBG]: rbuf=0x0x12298 
+[Serial DBG]: write end
+[Serial DBG]: test end 
+[Serial DBG]: buf=0x0x12090:0x0x12298 
+[Serial DBG]: buf=0x0x12090x0x0x12298 
+[Serial MSG] :  Test ret = 0
+[Serial DBG]: ret = 0 
+[Serial DBG]: test_transfer
+[Serial DBG]: tbuf=0x0x12090 
+[Serial DBG]: rbuf=0x0x12298 
+[Serial DBG]: write end
+[Serial DBG]: test end 
+[Serial DBG]: buf=0x0x12090:0x0x12298 
+[Serial DBG]: buf=0x0x12090x0x0x12298 
+[Serial MSG] :  Test ret = 0
+[Serial DBG]: ret = 0 
+[EXIT '/dev/ttyAMA3']
+===> ret = 0
+========= UART CH 3 <-> 4  test result OK
+========= GPIO ALV5,A27    start
+ret = 0
+ GPIO165, GPIO 27 Loop back Test resul OK
+========= GPIO ALV5,A27    test result OK
+========= GPIO E30,E31     start
+ret = 0
+ GPIO158, GPIO 159 Loop back Test resul OK
+========= GPIO E30,E31     test result OK
+========= MPEG-TS CH 0     start
+
+(W) 0xc005d000: 0x000000f0
+pass!! 0x000000f0
+========= MPEG-TS CH 0     test result OK
+========= MPEG-TS CH 1     start
+
+(W) 0xc005d004: 0x000000f0
+pass!! 0x000000f0
+========= MPEG-TS CH 1     test result OK
+========= Scaler Test      start
+
+(W) 0xc0066014: 0x00000fff
+pass!! 0x00000fff
+========= Scaler Test      test result OK
+========= MIPI DSI Test    start
+
+(W) 0xc00d0108: 0x0000ffff
+pass!! 0x0000ffff
+========= MIPI DSI Test    test result OK
+========= VIP 0 Test       start
+
+(W) 0xc0064010: 0x0000ffff
+pass!! 0x0000ffff
+========= VIP 0 Test       test result OK
+========= VIP 1 Test       start
+
+(W) 0xc0063010: 0x0000ffff
+pass!! 0x0000ffff
+========= VIP 1 Test       test result OK
+========= HDMI Test        start
+
+(W) 0xc0101014: 0x0000ffff
+pass!! 0x0000ffff
+========= HDMI Test        test result OK
+========= Crypto Engine    start
+
+(W) 0xc0015000: 0x00000007
+pass!! 0x00000007
+========= Crypto Engine    test result OK
+========= VPU Test         start
+GetVpuTestModule() 
+ASV_Video_Run() 
+[VPU|API] resole : 1920x1088, numFrameBuffers=6
+[   23.563000] [DRV|VPU_API]NX_VpuEncSetSeqParam() : 1920x1080, 30/1 fps, 30720 kbps (gop(65535), maxQ(51), SR(0), Str
+eamBuffer(0x76b75000, 0x74233000))
+Codec Result is Same!! 
+[   25.987000] [VPU|DRV]End of power saving!!!
+success
+Time = 2791517 
+ASV_Video_Status() 
+curr status = 0 
+ASV_Video_Stop() 
+========= VPU Test         test result OK
+========= VR 3D Test       start
+[thread] create start
+[thread] create done
+AvsGrahpicStart() done
+Grahpic processing start, frames(20)
+ <0> CheckResult Success.
+ <1> CheckResult Success.
+ <2> CheckResult Success.
+ <3> CheckResult Success.
+ <4> CheckResult Success.
+ <5> CheckResult Success.
+ <6> CheckResult Success.
+ <7> CheckResult Success.
+ <8> CheckResult Success.
+ <9> CheckResult Success.
+ <10> CheckResult Success.
+AvsGrahpicStop() start
+[thread] join start
+[thread] join done
+AvsGrahpicStop() done
+Totoal Running Time = 10001262usec, Stop Time = 10001202usec, Result = 1
+test end - time(10001292)
+========= VR 3D Test       test result OK
+========= USB EHCI         start
+[   36.266000] SRP: Device mode
+[   36.373000] USB RESET
+[   36.475000] usb 2-1: new high-speed USB device number 4 using nxp-ehci
+[   36.485000] USB RESET
+[   36.595000] usb 2-1: New USB device found, idVendor=0525, idProduct=a4a5
+[   36.602000] usb 2-1: New USB device strings: Mfr=2, Product=3, SerialNumber=0
+[   36.609000] usb 2-1: Product: Mass Storage Gadget
+[   36.614000] usb 2-1: Manufacturer: Linux 3.4.39+ with dwc_otg_pcd
+[   36.621000] g_mass_storage gadget: high-speed config #1: Linux File-Backed Storage
+[   36.630000] usb-storage 2-1:1.0: Quirks match for vid 0525 pid a4a5: 10000
+[   36.637000] scsi1 : usb-storage 2-1:1.0
+[   37.644000] scsi 1:0:0:0: Direct-Access     Linux    File-CD Gadget   0333 PQ: 0 ANSI: 2
+[   37.661000] sd 1:0:0:0: Attached scsi generic sg1 type 0
+[   37.662000] sd 1:0:0:0: [sdb] Attached SCSI removable disk
+USB Device Check
+
+=> echi found device: bus 002, dev 004
+========= USB EHCI         test result OK
+========= USB HSIC         start
+[   38.404000] usb 2-1: USB disconnect, device number 4
+[   38.404000] SRP: Device mode
+[   38.636000] USB RESET
+[   38.711000] usb 2-2.2: new high-speed USB device number 5 using nxp-ehci
+[   38.721000] USB RESET
+[   38.803000] usb 2-2.2: New USB device found, idVendor=0525, idProduct=a4a5
+[   38.810000] usb 2-2.2: New USB device strings: Mfr=2, Product=3, SerialNumber=0
+[   38.818000] usb 2-2.2: Product: Mass Storage Gadget
+[   38.823000] usb 2-2.2: Manufacturer: Linux 3.4.39+ with dwc_otg_pcd
+[   38.830000] g_mass_storage gadget: high-speed config #1: Linux File-Backed Storage
+[   38.838000] usb-storage 2-2.2:1.0: Quirks match for vid 0525 pid a4a5: 10000
+[   38.846000] scsi2 : usb-storage 2-2.2:1.0
+[   39.852000] scsi 2:0:0:0: Direct-Access     Linux    File-CD Gadget   0333 PQ: 0 ANSI: 2
+[   39.869000] sd 2:0:0:0: Attached scsi generic sg1 type 0
+[   39.870000] sd 2:0:0:0: [sdb] Attached SCSI removable disk
+USB Device Check
+
+=> hsic found device: bus 002, dev 005
+========= USB HSIC         test result OK
+[   40.521000] usb 2-2.2: USB disconnect, device number 5
+========= USB OTGHOST      start
+[   40.551000] SRP: Device mode
+[   40.651000] SRP: Host mode
+[   40.801000] Using Buffer DMA mode
+[   40.855000] Init: Port Power? op_state=1
+[   40.859000] Init: Power Port (1) i=(0)
+[   40.863000] Init: Power Port Complete!!!
+[   41.058000] Indeed it is in host mode hprt0 = 00021501
+[   41.225000] usb 1-1: new high-speed USB device number 2 using dwc_otg
+[   41.231000] Indeed it is in host mode hprt0 = 00001101
+[   41.411000] usb 1-1: New USB device found, idVendor=05e3, idProduct=0610
+[   41.418000] usb 1-1: New USB device strings: Mfr=0, Product=1, SerialNumber=0
+[   41.425000] usb 1-1: Product: USB2.0 Hub
+[   41.431000] hub 1-1:1.0: USB hub found
+[   41.435000] hub 1-1:1.0: 4 ports detected
+USB Device Check
+
+=> otg found device: bus 001, dev 002
+========= USB OTGHOST      test result OK
+[   42.658000] Using Buffer DMA mode
+========= RTC Alarm Test   start
+Alarm: 0 min 2 sec, wait 0 sec
+[   42.704000] WARN::dwc_otg_hcd_hub_control:2544: Overcurrent change detected
+[   42.704000] 
+[   42.914000] usb 1-1: USB disconnect, device number 2
+Rang : 0 min 1.190258 sec 
+========= RTC Alarm Test   test result OK
+========= WatchDog Test    start
+Watchdog Set : 2 sec
+[   45.993000] watchdog: NXP Watchdog: watchdog did not stop!
+========= WatchDog Test    test result OK
+========= MLC/DPC/LVDS     start
+/dev/fb0: virt = 0x766ef000,  7372800 (1024 *  600, 32 bpp, 3 buffers)
+(  0)[FB:  0] =   0 msec
+(  1)[FB:  1] =   0 msec
+(  2)[FB:  2] =   0 msec
+(  3)[FB:  0] =   0 msec
+(  4)[FB:  1] =   0 msec
+(  5)[FB:  2] =   0 msec
+(  6)[FB:  0] =   0 msec
+(  7)[FB:  1] =   0 msec
+(  8)[FB:  2] =   0 msec
+(  9)[FB:  0] =   0 msec
+========= MLC/DPC/LVDS     test result OK
+========= DVFS Test        start
+VOL :-75mV
+1400000khz, 1350000 (-75000) align 12500 (O) -> 1275000
+1300000khz, 1300000 (-75000) align 12500 (O) -> 1225000
+1200000khz, 1250000 (-75000) align 12500 (O) -> 1175000
+1100000khz, 1200000 (-75000) align 12500 (O) -> 1125000
+1000000khz, 1175000 (-75000) align 12500 (O) -> 1100000
+ 900000khz, 1150000 (-75000) align 12500 (O) -> 1075000
+ 800000khz, 1125000 (-75000) align 12500 (O) -> 1050000
+ 700000khz, 1100000 (-75000) align 12500 (O) -> 1025000
+ 600000khz, 1075000 (-75000) align 12500 (O) -> 1000000
+ 500000khz, 1075000 (-75000) align 12500 (O) -> 1000000
+ 400000khz, 1075000 (-75000) align 12500 (O) -> 1000000
+RUN DVFS: cores 4 EA, random
+ 800000khz ->  700000khz (1125000uV -> 1025000uV) 
+Time:   0.185184 sec 
+ 700000khz -> 1100000khz (1025000uV -> 1125000uV) 
+Time:   0.124722 sec 
+1100000khz ->  800000khz (1125000uV -> 1050000uV) 
+Time:   0.166769 sec 
+ 800000khz ->  900000khz (1050000uV -> 1075000uV) 
+Time:   0.142055 sec 
+ 900000khz -> 1000000khz (1075000uV -> 1100000uV) 
+Time:   0.136527 sec 
+1000000khz -> 1400000khz (1100000uV -> 1275000uV) 
+Time:   0.106486 sec 
+1400000khz -> 1300000khz (1275000uV -> 1225000uV) 
+Time:   0.114182 sec 
+1300000khz ->  600000khz (1225000uV -> 1000000uV) 
+Time:   0.216884 sec 
+ 600000khz -> 1200000khz (1000000uV -> 1175000uV) 
+Time:   0.120248 sec 
+1200000khz ->  500000khz (1175000uV -> 1000000uV) 
+Time:   0.249803 sec 
+ 500000khz ->  400000khz (1000000uV -> 1000000uV) 
+Time:   0.306821 sec 
+RESTORE : ret=0
+ 400000khz ->  800000khz (1000000uV -> 1125000uV) 
+========= DVFS Test        test result OK
+========= Suspend Test     start
+Alarm: 0 min 2 sec (2), wait(0)sec
+Set Alarm
+Goto susp[   48.274000] PM: suspend entry 1970-01-01 00:00:48.274846702 UTC
+end to mem ...
+[   48.282000] PM: Syncing filesystems ... done.
+[   48.289000] Freezing user space processes ... (elapsed 0.001 seconds) done.
+[   48.298000] Freezing remaining freezable tasks ... (elapsed 0.001 seconds) done.
+[   48.307000] Suspending console(s) (use no_console_suspend to debug)
+[   48.314000] dwc_otg_hcd_suspend, usb device mode
+[   48.315000] setting Reset VR addr(0xf0012008)
+[   48.315000] setting ClockGen, set 0
+[   48.315000] setting PHY_BASEADDR_POWER_GATE, set 1
+[   48.315000] setting PHY_BASEADDR_PMU_ISOLATE, set 0
+[   48.315000] setting PHY_BASEADDR_PMU_ISOLATE+4, set 1
+[   48.315000] setting PHY_BASEADDR_PMU_ISOLATE+8, set 1
+[   48.315000] read PHY_BASEADDR_PMU_ISOLATE + 0xC
+[   48.315000] Wait Power Down Ack(powerUpAck=0x00000003)
+[   48.336000] ++nxp_hsic_phy_pwr_on 0
+suspend_enter enter
+suspend machine
+
+--------------------------------------------------------------------------------
+ Second Boot by Nexell Co. : Ver0.5 - Built on Dec 21 2014 14:11:19
+--------------------------------------------------------------------------------
+EMA VALUE : 001
+123RD DQ : Org value = 0x1412120F
+RD DQ : Nomal max value setting.
+WR DQ : Org value = 0x0A0A0A0A
+Sorted Value[0] = 10
+Sorted Value[1] = 10
+Sorted Value[2] = 10
+Sorted Value[3] = 10
+WR DQ : Nomal max value setting.
+Read  DQ = 0x12121212
+Write DQ = 0x0A0A0A0A
+ DDR3 SelfRefresh exit Done!
+0x00000002
+CRC: 0x015EB60E FN: 0x40821968 phy: 0x40008200 len: 0x00020000 ret: 0x015EB60E
+It's WARM BOOT
+Jump to Kernel!
+resume machine
+[   48.385000] mmc_host mmc0: Bus speed (slot 0) = 40000000Hz (slot req 400000Hz, actual 400000HZ div = 50)
+[   48.389000] setting PHY_BASEADDR_POWER_GATE, set 1
+[   48.389000] setting PHY_BASEADDR_PMU_ISOLATE+4, set 0
+[   48.389000] setting PHY_BASEADDR_PMU_ISOLATE+8, set 0
+[   48.389000] setting PHY_BASEADDR_PMU_ISOLATE, set 1
+[   48.389000] read PHY_BASEADDR_PMU_ISOLATE + 0xC
+[   48.389000] Wait Power UP Ack(powerUpAck=0x00000002)
+[   48.389000] setting ClockGen, set 1
+[   48.389000] setting Reset VR addr(0xf0012008)
+[   48.390000] setting PHY_BASEADDR_VR_PMU addr(0xf0072000)
+[   48.392000] nxp_wdt: watchdog disabled
+[   48.472000] mmc_host mmc0: Bus speed (slot 0) = 40000000Hz (slot req 40000000Hz, actual 40000000HZ div = 0)
+[   48.482000] PM: resume of devices complete after 109.581 msecs
+[   48.488000] Restarting tasks ... done.
+[   48.493000] PM: suspend exit 1970-01-01 00:00:50.408553302 UTC
+Wakeup from suspend (sys:Success) ...
+========= Suspend Test     test result OK
+
+    End ASB Test
+================================================
+================================================
+   Test Report (46747)msec 
+  binNo.  Name                      Result
+================================================
+    6     CPU Core Test           : OK(0, 157msec)
+   15     ADC Test                : OK(0, 3262msec)
+   11     GMAC Test               : OK(0, 364msec)
+   16     I2C CH 0 Test           : OK(0, 119msec)
+   16     I2C CH 1 Test           : OK(0, 119msec)
+   16     I2C CH 2 Test           : OK(0, 119msec)
+   25     I2S CH 0 <-> 1          : OK(0, 3191msec)
+   25     I2S CH 0 <-> 2          : OK(0, 3190msec)
+   17     AC97 Test               : OK(0, 121msec)
+   26     SPDIF TX <-> RX         : OK(0, 3170msec)
+    9     MMC Test                : OK(0, 1262msec)
+   27     NAND Test               : OK(0, 120msec)
+   12     PWM/PPM Test            : OK(0, 1119msec)
+   13     PWM CH 3 Test           : OK(0, 121msec)
+   14     PDM Test                : OK(0, 121msec)
+   18     SPI CH 1 Test           : OK(0, 121msec)
+   19     UART CH 1 <-> 2         : OK(0, 656msec)
+   19     UART CH 3 <-> 4         : OK(0, 654msec)
+   10     GPIO ALV5,A27           : OK(0, 123msec)
+   10     GPIO E30,E31            : OK(0, 124msec)
+   32     MPEG-TS CH 0            : OK(0, 121msec)
+   32     MPEG-TS CH 1            : OK(0, 121msec)
+   34     Scaler Test             : OK(0, 121msec)
+   39     MIPI DSI Test           : OK(0, 121msec)
+   33     VIP 0 Test              : OK(0, 121msec)
+   33     VIP 1 Test              : OK(0, 121msec)
+   40     HDMI Test               : OK(0, 121msec)
+   41     Crypto Engine           : OK(0, 122msec)
+   31     VPU Test                : OK(0, 2912msec)
+   30     VR 3D Test              : OK(0, 10134msec)
+   21     USB EHCI                : OK(0, 2138msec)
+   22     USB HSIC                : OK(0, 2137msec)
+   23     USB OTGHOST             : OK(0, 2145msec)
+    8     RTC Alarm Test          : OK(0, 1309msec)
+   29     WatchDog Test           : OK(0, 2126msec)
+   36     MLC/DPC/LVDS            : OK(0, 120msec)
+   48     DVFS Test               : OK(0, 2029msec)
+    7     Suspend Test            : OK(0, 2264msec)
+================================================
+
+
+  Chip Info : NZBN6     6       184     180     7       93, vid=0x04e8, pid=0x1234
+
+
+
+ ASB SUCCESS!!!
+[   49.390000] ++nxp_hsic_phy_pwr_on 1
+[   49.393000] usb usb2: root hub lost power or was reset
+[   49.744000] usb 2-2: reset high-speed USB device number 2 using nxp-ehci
+[   50.140000] usb 2-2.1: reset high-speed USB device number 3 using nxp-ehci
+

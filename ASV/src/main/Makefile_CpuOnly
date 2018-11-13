@@ -1,0 +1,50 @@
+ifndef TOPDIR
+TOPDIR := ../..
+endif
+
+include $(TOPDIR)/env.mk
+
+######################################################################
+# Build options
+INCLUDE += -I./
+LIBRARY +=
+
+INCLUDE += -I./ -I../ASVCommandLib
+INCLUDE += -I./zlib/lib/include
+LIBRARY	+= -lstdc++ -lpthread
+
+LIBRARY	+= -L./zlib/lib/lib/ -lz
+
+CFLAGS	+= -D__STD_ALONE__=1
+
+######################################################################
+# Target
+TARGET	:= cpu_test
+
+######################################################################
+# Build
+COBJS   := dvfsutil.o 
+CPPOBJS	:= cpu_test.o
+
+OBJS	:= $(COBJS) $(CPPOBJS)
+
+all: depend $(OBJS) \
+	$(TARGET)
+
+$(TARGET):
+	$(CC) $(CFLAGS) $(OBJS) -o $(TARGET) $(LIBRARY)
+	cp $(TARGET) $(TOPDIR)/bin
+	@echo "done"
+
+clean :
+	rm -f $(TARGET) *.o .depend
+
+#########################################################################
+# Dependency
+ifeq (.depend,$(wildcard .depend))
+include .depend
+endif
+SRCS := $(COBJS:.o=.c) $(CPPOBJS:.o=.cpp)
+INCS := $(INCLUDE)
+depend dep:
+	$(CC)  -M  $(CFLAGS)   $(INCS) $(SRCS) > .depend

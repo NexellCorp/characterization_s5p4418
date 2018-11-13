@@ -1,0 +1,5 @@
+#!/bin/sh
+mkdir -p /mnt/mmc
+mkdir -p /mnt/mmc0
+mount /dev/mmcblk0p1 /mnt/mmc0
+wait

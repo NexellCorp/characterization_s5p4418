@@ -1,0 +1,58 @@
+Version : 0.9.14
+ a. Comport설정과 Cornor 값 들을 Test 도중에는 바꿀수 없게 하였음.
+ b. Comport 설정이 이미 되어 있는 경우 바꿀 경우 다시한번 물어 보게 수정하였음.
+ c. CPU Test Option의 기본값을 변경함.
+   Default Core : 1.2 volt --> 1.1 volt
+   Default PLL  : 1.9 volt
+ d. Chip Number을 넣을 수 있게 수정하였음.
+
+Version : 0.9.13
+ a. Output Result Check Box를 삭제하고 항상 Output 결과가 적힐수 있도록 하였음.
+ b. Start Button을 눌렀을 당시에 출력 파일 창의 이름으로 file을 생성을 하거나 생성이 되어 있으면 뒤에 이어서 붙이게 되어 있음.
+
+Version : 0.9.12
+ a. Chip Information Mode에서 ECID 이후 Button이 다시 Enable되지 않는 문제 해결.
+
+Version : 0.9.11
+ a. LVCC Validation 시 Stop Button이 동작하지 않는 문제 해결.
+
+Version : 0.9.10
+ a. Add Aging Test Function.
+ b. Add VPU/3D individual frequency selection function.
+
+Version : 0.9.9b
+ a. Reset Delay를 다시 2초로 수정함.
+
+Version : 0.9.9a
+ a. LVCC Validation 실패 시 계속해서 전압이 올라가는 현상 수정함.
+    (설정한 최대 전압까지만 테스트함.)
+ b. Test용으로 Reset Delay를 5초로 함.
+
+Version : 0.9.8
+ a. 성공 시 3번까지 테스트 하게 수정.
+ b. Core 전원과 ARM 전원 분리하여 설정할 수 있게 수정함.
+ c. SD Card Image에서 3D Test 항목에 Bug가 있어 수정함.
+    ( 초기화 Bug가 있었음. )
+
+Version : 0.9.7
+ a. Floating Point 값의 오차로 인한 Frequency 오차 루틴을 수정함.
+
+Version : 0.9.6
+ a. 0.9.5 version에서 수정한 사항중 한곳이 적용되지 않았던 부분을 수정하였음.
+ b. CPU 테스트 할때 Core 전압과 System 전원을 원하는 값으로 설정할수 있게 수정하였음.
+
+Version : 0.9.5
+ a. Test 중 전압 설정과 Frequency 설정의 순서가 바뀌어서 정상적으로 바꾸어 놓았음.
+   ( Freqency 이후 Voltage 설정 --> Voltage 설정 이후 Frequency 설정 )
+
+Version : 0.9.4
+ a. 테스트 도중 Stop Button을 눌렀을 경우 바로 Start Button을 Enable하는 것이 아니라
+    모든 테스트가 완료되었을때 Start Button을 활성화 하도록 수정하였음.
+
+Version : 0.9.3
+ a. LVCC 값이 Output에 출력이 안되던 문제 해결함.
+ b. 테스트 실패하였을 경우 LVCC 값을 N/A로 표시하게 수정함.
+
+Version : 0.9.2
+ a. 각각의 Frequency 별로 테스트 결과를 출력하게 수정함.
+ b. CPU/VPU/3D 모두 높은 Frequency에서 낮은 순서로 테스트하게 수정함.

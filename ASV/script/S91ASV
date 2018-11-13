@@ -1,0 +1,6 @@
+#!/bin/sh
+insmod /root/vr.ko
+insmod /root/nx_vpu.ko
+insmod /root/cache_test_mod.ko
+
+/root/asv_test &
