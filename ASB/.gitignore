@@ -11,7 +11,6 @@
 System.map
 arch/arm/include/generated
 vmlinux
-*.a
 *.d
 *.mod.*
 include/config
